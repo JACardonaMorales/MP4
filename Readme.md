@@ -22,11 +22,54 @@ El modelo permite configurar diferentes funciones de activación, tasas de apren
 
 El proyecto está desarrollado en Python y utiliza NumPy para las operaciones matemáticas, Pandas para el procesamiento de datos, Matplotlib para la generación de gráficas y Streamlit para la interfaz de usuario.
 
-## Ejecución del proyecto
+##  Guía de Instalación y Ejecución Paso a Paso
 
-Para ejecutar la aplicación es necesario tener Python instalado y las dependencias del proyecto disponibles.
+Sigue estas instrucciones en tu terminal para ejecutar el proyecto en tu máquina:
 
-Primero, se deben instalar las dependencias necesarias y posteriormente ejecutar la aplicación mediante Streamlit.
+### 1. Abrir la terminal en la carpeta del proyecto
+Abre una terminal (PowerShell, CMD, bash o zsh) y navega hasta la carpeta del proyecto:
+```bash
+cd ruta/hacia/MP4
+```
+
+### 2. Crear y activar un entorno virtual
+
+* **En Windows (PowerShell):**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  ```
+  *(Nota: Si PowerShell muestra un error de políticas de script, ejecuta `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` y vuelve a activar).*
+
+* **En Windows (Símbolo del sistema / CMD):**
+  ```cmd
+  python -m venv .venv
+  .\.venv\Scripts\activate.bat
+  ```
+
+* **En macOS / Linux:**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+### 3. Instalar dependencias
+Con el entorno virtual activado, instala los paquetes requeridos:
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4. Ejecutar la aplicación
+Ejecuta el servidor de Streamlit con el siguiente comando:
+```bash
+streamlit run app.py
+```
+
+Al iniciarse, se abrirá automáticamente una pestaña en tu navegador en la dirección local:
+ **`http://localhost:8501`**
+
+---
 
 ## Funcionalidades
 
